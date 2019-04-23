@@ -1,0 +1,78 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar .navbar-toggler{
+    border: unset;
+
+    position: relative;
+    height: 10px;
+}
+
+.navbar-toggler-icon-custom{
+    width: 26px;
+    height: 2px;
+    display: inline-block;
+    background-color: #3a52bf;
+    position: absolute;
+    left: 0;
+}
+
+.navbar-toggler-icon-custom:first-child{
+    top: 0;
+}
+
+.navbar-toggler-icon-custom:last-child{
+    top: 100%;
+}
+
+.navbar-toggler:focus {
+    outline:0;
+}
+
+/* section-1 */
+
+.section-1{
+    background-image: url('../images/bg-01.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.section-1 .col{
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+}
+
+.section .col .btn{
+    width: 200px;
+    text-transform: uppercase;
+    padding: 16px;
+}
+
+.btn-blue{
+    background-color: #745cf9;
+    color: #fff;
+    border-radius: unset;
+    border: 2px solid #745cf9;
+}
+
+.btn-blue:hover{
+    background-color: #5d47d7;
+    color: #fff;
+    border: 2px solid #5d47d7;
+}
+
+.btn-white{
+    color: #fff;
+    border-radius: unset;
+    border: 2px solid #fff;
+}
+
+.btn-white:hover{
+    background-color: #fff;
+    color: #777;
+}
+
+.section-3{
+    background-color: #eee;
+}
