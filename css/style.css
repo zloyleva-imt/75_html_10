@@ -76,3 +76,80 @@ body{
 .section-3{
     background-color: #eee;
 }
+
+.section-4{
+    background-image: url('../images/bg-02.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.section-6{
+    background-color: #0e1015;
+}
+
+.portfolio-item{
+    padding: unset;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item-bg{
+    background-position: center;
+    background-size: cover;
+}
+
+.portfolio-item-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom,
+        rgba(0,0,0,1) 0%,
+        rgba(0,0,0,.5) 50%, 
+        rgba(0,0,0,1) 100%);
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.portfolio-item:hover .portfolio-item-overlay{
+    opacity: 1;
+}
+
+.portfolio-item-title{
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    position: absolute;
+    transition: top .3s;
+}
+
+.portfolio-item:hover .portfolio-item-title{
+    top: 50%;
+}
+
+@media (max-width: 575px){
+    .portfolio-item-bg{
+        height: 22rem;
+    }
+}
+
+@media (min-width: 576px){
+    .portfolio-item-bg{
+        height: 16rem;
+    }
+}
+
+@media (min-width: 768px){
+    .portfolio-item-bg{
+        height: 16rem;
+    }
+}
+
+@media (min-width: 992px){
+    .portfolio-item-bg{
+        height: 20rem;
+    }
+}
